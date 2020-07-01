@@ -5,10 +5,12 @@ import ReactDOM from 'react-dom'
 import React from 'react'
 import { FirstComponent } from "./components/rootcomponent";
 import MyDummyComponent from './components/dummy';
+import ReviewContainer from './parent-child/reviewcontainer';
 
 var location = document.getElementById('myroot')
 
 ReactDOM.render(<div>
+                    <ReviewContainer></ReviewContainer>
                     <FirstComponent message="All which looks HTML is not HTML" score="88" color="red">first</FirstComponent>
                     <FirstComponent message="React uses JSX in render function!" score="8" color="green">second</FirstComponent>
                     <FirstComponent message="JSX is mix of JS and XML(HTML!)" score="17" color="blue">third</FirstComponent>

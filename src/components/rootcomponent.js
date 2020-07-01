@@ -7,7 +7,7 @@ export class FirstComponent extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            likes:4,
+            likes:31,
             name:"Somename####"
         }
         this.addLikes = this.addLikes.bind(this)
@@ -35,7 +35,8 @@ export class FirstComponent extends React.Component{
 
         let mycss ={
             color:this.props.color,
-            fontFamily:'cursive'
+            fontFamily:'cursive',
+            fontSize:this.state.likes+'px'
         }
 
         return (
