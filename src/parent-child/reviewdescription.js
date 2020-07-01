@@ -5,7 +5,7 @@ class ReviewDescription extends React.Component {
     render() { 
         return (  
             <div>
-                <textarea>Review description. Lorem ipsum doroth liduth vugen nigor tika.</textarea>
+                <textarea value='Review description. Lorem ipsum doroth liduth vugen nigor tika.' readOnly></textarea>
             </div>
         );
     }

@@ -6,10 +6,14 @@ import React from 'react'
 import { FirstComponent } from "./components/rootcomponent";
 import MyDummyComponent from './components/dummy';
 import ReviewContainer from './parent-child/reviewcontainer';
+import LifeCycle from './component-lifecycle/lifecycle';
+import ConsumeUser from './consumeapi/consume';
 
 var location = document.getElementById('myroot')
 
 ReactDOM.render(<div>
+                    <ConsumeUser></ConsumeUser>
+                    <LifeCycle></LifeCycle>
                     <ReviewContainer></ReviewContainer>
                     <FirstComponent message="All which looks HTML is not HTML" score="88" color="red">first</FirstComponent>
                     <FirstComponent message="React uses JSX in render function!" score="8" color="green">second</FirstComponent>
